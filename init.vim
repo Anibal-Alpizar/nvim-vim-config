@@ -15,7 +15,6 @@ Plug 'github/copilot.vim'	        "github copilot
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "fzf
 Plug 'junegunn/fzf.vim' 		"fzf
 
-
 call plug#end() 			"cerramos el llamado de los plugins
 
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -47,7 +46,6 @@ colorscheme gruvbox
 set termguicolors 			"activa el true color en la terminal
 
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 "configuracion de emmet-vim
 let g:user_emmet_leader_key=',' 	"mapeando la tecla lider por una coma, con esto se completa los tag con doble coma.
 
@@ -55,9 +53,7 @@ let g:user_emmet_leader_key=',' 	"mapeando la tecla lider por una coma, con esto
 "configuracion de vim-airline
 let g:airline#extensions#tabline#enabled = 1	"muestra la linea de pestaña en la que estamos buffer
 let g:airline#extensions#tabline#formatter = 'unique_tail'	"muestra solo el nombre del archivo que estamos modificando
-let g:airline_theme='onedark'	"el tema de airline
-
-
+let g:airline_theme='gruvbox'		"tema de la barra de estado	
 "configuracion de nerdtree
 "mapeando el abrir y cerrar de nerdtree con nerdtreetoggle vemos los archivos en el arbol y podemos cerrarlo a la vez, map es la C mayuscula representa el
 "control y -n la tecla n lo que indica que realizará la siguiente funcion de excribir el comando NERDTreeToggle y CR significa ENTER.
@@ -231,3 +227,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
