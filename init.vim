@@ -22,10 +22,6 @@ call plug#end() 			"cerramos el llamado de los plugins
 " Atajo de teclado para buscar archivos
 nnoremap <C-m> :Files<CR>
 
-" Atajo de teclado para buscar texto en archivos
-nnoremap <C-l> :GFiles<CR>
-
-
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 "CONFIGURACIONES BASICAS 
 set guifont=Fira\ Code:h12 		"configuracion de la fuente
@@ -40,7 +36,8 @@ set nowrap				"el texto en una linea no baja a la siguiente, solo continua en la
 "set noswapfile				"para evitar el mensaje que sale al abrir algunos archivos sobre swap.
 set clipboard=unnamed			"para poder utilizar el portapapeles del sistema operativo 'esto permite poder copiar y pegar desde cualquier parte a nvim y viceversa.	
 
-
+"poner transparencia a la ventana
+set winblend=50
 "configuracion del tema
 colorscheme gruvbox
 set termguicolors 			"activa el true color en la terminal
